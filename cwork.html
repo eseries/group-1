@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+    <script>
+        function getGrade(){
+            let score = prompt('please enter your score');
+            score = Number(score);
+
+            if(isNaN(score) || score < 0 || score > 100){
+                alert("Invalid score Please Enter a number between 0 and 100");
+                return;
+            }
+          
+            let grade;
+            let message;
+
+            if (score>=90){
+                grade = "A";
+                message = "Excellent";
+            }
+               else if (score>=80){
+                grade = "B";
+                message = "Good Job ";
+            }
+            else if (score>=70){
+                grade = "C";
+                message = "You can do beter ";
+            }
+            else if (score>=60){
+                grade = "D";
+                message = "You need to study harder";
+            }
+            else if (score>=50){
+                grade = "D";
+                message = "You need to study harder";
+            }
+        else{
+        grade = "F";
+        message = "you failed";
+    }
+}
+       alert(getGrade());
+    
+
+    </script>
+</body>
+</html>
